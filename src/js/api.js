@@ -13,6 +13,7 @@ export function useLoading(globalProps = {}, globalSlots = {}) {
       }
 
       const propsData = {...globalProps, ...props, ...forceProps};
+      console.log('propsData',propsData);
       let container = propsData.container;
 
       if (!propsData.container) {

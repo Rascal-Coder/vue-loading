@@ -1,9 +1,9 @@
-import Spinner from './spinner.vue'
-import Dots from './dots.vue'
-import Bars from './bars.vue'
+// import Spinner from './spinner.vue'
+// import Dots from './dots.vue'
+import RotateSquare from './RotateSquare.vue'
+import RotateSquare2 from './RotateSquare2.vue'
 
 export default {
-  Spinner,
-  Dots,
-  Bars,
+  RotateSquare,
+  RotateSquare2
 }

@@ -104,10 +104,8 @@ export default defineComponent({
     hide() {
       this.$emit('hide');
       this.$emit('update:active', false);
-
       if (this.programmatic) {
         this.isActive = false;
-
         // Timeout for the animation complete before destroying
         setTimeout(() => {
           const parent = this.$el.parentElement;

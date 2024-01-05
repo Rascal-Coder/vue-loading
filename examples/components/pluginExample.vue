@@ -106,7 +106,7 @@ export default defineComponent({
       canCancel: true,
       useSlot: false,
       loader: "RotateSquare",
-      timeout: 3000, //ms
+      timeout: 300000, //ms
       color: "#00ab00",
       bgColor: "#4b4b4b",
       height: 64,

@@ -21,7 +21,7 @@
             <div class="card-header"> Links</div>
             <div class="card-body">
               <ul>
-                <li><a href="https://github.com/ankurk91/vue-loading-overlay" target="_blank">GitHub</a></li>
+                <li><a href="https://github.com/Rascal-Coder/vue-loading" target="_blank">GitHub</a></li>
                 <li><a href="https://www.npmjs.com/package/vue-loading-overlay" target="_blank">npm</a></li>
               </ul>
             </div>
@@ -31,7 +31,8 @@
     </main>
 
     <footer class="text-center text-muted small mb-3">
-      Created by <a href="https://twitter.com/ankurk91" target="_blank" rel="noopener">@ankurk91</a>
+      Created by <a href="https://twitter.com/ankurk91" target="_blank" rel="noopener">@ankurk91</a>,
+      loaders reverted by <a href="https://github.com/Rascal-Coder/Rascal-Coder" target="_blank" rel="noopener">@Rascal_Coder</a>
     </footer>
   </div>
 </template>

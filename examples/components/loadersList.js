@@ -7,5 +7,6 @@ export const loadersList = [
   "CubeShadow",
   "Grid",
   "Stretch",
-  "Diamond"
+  "Circle",
+  "LetterCube"
 ];

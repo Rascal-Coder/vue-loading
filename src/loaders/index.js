@@ -6,7 +6,8 @@ import RotateSquare5 from './RotateSquare5.vue'
 import CubeShadow from './CubeShadow.vue'
 import Grid from './Grid.vue'
 import Stretch from './Stretch.vue'
-import Diamond from './Diamond.vue'
+import Circle from './Circle.vue'
+import LetterCube from './LetterCube.vue'
 
 export default {
   RotateSquare,
@@ -17,5 +18,6 @@ export default {
   CubeShadow,
   Grid,
   Stretch,
-  Diamond
+  Circle,
+  LetterCube
 }

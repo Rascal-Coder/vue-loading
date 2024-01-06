@@ -26,8 +26,11 @@ export default defineComponent({
     },
   },
   computed: {
+    size(){
+      return Math.max(this.width, this.height)
+    },
     innerStyles() {
-      let size = parseInt(Math.max(this.width, this.height));
+      let size = parseInt(this.size);
       return {
         transform: `scale('${+ size / 80}')`,
         "--bg-color": this.color,
@@ -35,8 +38,8 @@ export default defineComponent({
     },
     styles() {
       return {
-        width: `${this.width}px`,
-        height: `${this.height}px`,
+        width: `${this.size}px`,
+        height: `${this.size}px`,
       };
     },
   },

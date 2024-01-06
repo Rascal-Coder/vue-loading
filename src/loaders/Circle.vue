@@ -1,7 +1,7 @@
 <template>
     <svg v-bind:style="styles" class="spinner spinner--circle-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
       <g class="anim-0">
-        <circle cx="50" cy="50" r="50" v-bind:fill="backgroundColor" />
+        <circle cx="50" cy="50" r="50" v-bind:fill="color" />
       </g>
       <g class="anim-1">
         <circle cx="50" cy="50" r="5" fill="white" />
@@ -25,7 +25,7 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "RotateSquare",
+  name: "Circle",
   props: {
     color: {
       type: String,
@@ -43,7 +43,6 @@ export default defineComponent({
   computed: {
     styles() {
       return {
-        backgroundColor: this.color,
         width: `${this.width}px`,
         height: `${this.height}px`,
       };

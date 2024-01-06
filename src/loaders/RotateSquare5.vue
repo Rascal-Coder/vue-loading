@@ -23,8 +23,11 @@ export default defineComponent({
     },
   },
   computed: {
+    size(){
+      return Math.max(this.width, this.height);
+    },
     outerWidth() {
-      let size = parseInt(Math.max(this.width, this.height));
+      let size = parseInt(this.size);
       return this.calcWidth(size);
     },
     outerStyles() {
@@ -45,8 +48,8 @@ export default defineComponent({
     },
     styles() {
       return {
-        width: `${this.width}px`,
-        height: `${this.height}px`,
+        width: `${this.size}px`,
+        height: `${this.size}px`,
       };
     },
   },

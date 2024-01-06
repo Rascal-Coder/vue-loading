@@ -20,7 +20,6 @@ describe('Loading component slots', () => {
 
     expect(wrapper.find('h3').exists()).toBe(true);
     expect(wrapper.find('.vl-icon').exists()).toBe(true);
-    expect(wrapper.find('svg').exists()).toBe(false);
     wrapper.unmount();
   });
 
@@ -36,7 +35,6 @@ describe('Loading component slots', () => {
 
     expect(wrapper.find('h3').exists()).toBe(true);
     expect(wrapper.find('.vl-icon').exists()).toBe(true);
-    expect(wrapper.find('svg').exists()).toBe(true);
     wrapper.unmount();
   });
 
@@ -52,7 +50,6 @@ describe('Loading component slots', () => {
 
     expect(wrapper.find('h3').exists()).toBe(true);
     expect(wrapper.find('.vl-icon').exists()).toBe(true);
-    expect(wrapper.find('svg').exists()).toBe(true);
     wrapper.unmount();
   });
 

@@ -22,7 +22,10 @@ exports[`Loading component renders when active 1`] = `
       
       
       
-      <spinner />
+      <div
+        class="spinner spinner--rotate-square"
+        style="background-color: rgb(0, 0, 0); width: 40px; height: 40px; animation-duration: 1.2s;"
+      />
       
       
       
@@ -54,7 +57,10 @@ exports[`Loading component renders when not active 1`] = `
       
       
       
-      <spinner />
+      <div
+        class="spinner spinner--rotate-square"
+        style="background-color: rgb(0, 0, 0); width: 40px; height: 40px; animation-duration: 1.2s;"
+      />
       
       
       

@@ -74,7 +74,7 @@ export default defineComponent({
     zIndex: Number,
     loader: {
       type: String,
-      default: 'spinner'
+      default: 'RotateSquare'
     }
   },
   components: Loaders,

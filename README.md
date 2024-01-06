@@ -1,22 +1,13 @@
 # Vue Loading Overlay Component
 
-[![downloads](https://badgen.net/npm/dt/vue-loading-overlay)](https://npm-stat.com/charts.html?package=vue-loading-overlay&from=2018-01-01)
-[![jsdelivr](https://data.jsdelivr.com/v1/package/npm/vue-loading-overlay/badge?style=rounded)](https://www.jsdelivr.com/package/npm/vue-loading-overlay)
-[![npm-version](https://badgen.net/npm/v/vue-loading-overlay)](https://www.npmjs.com/package/vue-loading-overlay)
-[![github-tag](https://badgen.net/github/tag/ankurk91/vue-loading-overlay)](https://github.com/ankurk91/vue-loading-overlay/tags)
-[![build](https://github.com/ankurk91/vue-loading-overlay/workflows/build/badge.svg)](https://github.com/ankurk91/vue-loading-overlay/actions)
-[![license](https://badgen.net/github/license/ankurk91/vue-loading-overlay)](LICENSE.txt)
-![TypeScript](https://badgen.net/badge/icon/Typed?icon=typescript&label&labelColor=blue&color=555555)
-
 Vue.js component for full screen loading indicator
 
-## [Demo](https://ankurk91.github.io/vue-loading-overlay/) or [JSFiddle](https://jsfiddle.net/ankurk91/2ou37bc8/)
+## [Demo](https://ankurk91.github.io/vue-loading-overlay/)
 
 ### Version matrix
 
 | Vue.js version | Package version |                                                           Branch |
 | :---           |:---------------:|-----------------------------------------------------------------:| 
-| 2.x            |       3.x       | [3.x](https://github.com/ankurk91/vue-loading-overlay/tree/v3.x) |
 | 3.x            |       6.x       |                                                           `main` |
 
 ## Installation
@@ -170,7 +161,7 @@ The component accepts these props:
 | color            | String              | `#000`               | Customize the color of loading icon |
 | height           | Number              | *                    | Customize the height of loading icon |
 | width            | Number              | *                    | Customize the width of loading icon |
-| loader           | String              | `spinner`            | Name of icon shape you want use as loader, `spinner` or `dots` or `bars` |
+| loader           | String              | `RotateSquare`            | Name of icon shape you want use as loader, `["RotateSquare", "CubeShadow", "Grid","Stretch","Circle","LetterCube"] ` yada, more see  [demo](https://rascal-coder.github.io/vue-loading/)|
 | background-color | String              | `#fff`               | Customize the overlay background color |
 | opacity          | Number              | `0.5`                | Customize the overlay background opacity |
 | z-index          | Number              | `9999`               | Customize the overlay z-index |
@@ -239,22 +230,6 @@ let loader = this.$loading.show({
 });
 ```
 
-## Use directly in browser (with CDN)
-
-```html
-<!-- Vue js -->
-<script src="https://cdn.jsdelivr.net/npm/vue@3.3"></script>
-<!-- Lastly add this package -->
-<script src="https://cdn.jsdelivr.net/npm/vue-loading-overlay@6"></script>
-<link href="https://cdn.jsdelivr.net/npm/vue-loading-overlay@6/dist/css/index.css" rel="stylesheet">
-<!-- Init the plugin and component-->
-<script>
-    const app = Vue.createApp({});
-    app.use(VueLoading.LoadingPlugin);
-    app.component('loading', VueLoading.Component)
-    app.mount('#app')
-</script>
-```
 
 ## Run examples on your localhost
 

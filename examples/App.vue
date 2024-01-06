@@ -4,7 +4,7 @@
       <span class="navbar-brand mb-0">Vue.js Loading Overlay</span>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="https://github.com/ankurk91/vue-loading-overlay"
+          <a class="nav-link" href="https://github.com/Rascal-Coder/vue-loading"
              target="_blank"> GitHub</a></li>
       </ul>
     </nav>
@@ -22,7 +22,7 @@
             <div class="card-body">
               <ul>
                 <li><a href="https://github.com/Rascal-Coder/vue-loading" target="_blank">GitHub</a></li>
-                <li><a href="https://www.npmjs.com/package/vue-loading-overlay" target="_blank">npm</a></li>
+                <li><a href="https://www.npmjs.com/package/@rascoder/vue-loading" target="_blank">npm</a></li>
               </ul>
             </div>
           </div>

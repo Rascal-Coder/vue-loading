@@ -2,7 +2,7 @@
 
 Vue.js component for full screen loading indicator
 
-## [Demo](https://ankurk91.github.io/vue-loading-overlay/)
+## [Demo](https://rascal-coder.github.io/vue-loading/)
 
 ### Version matrix
 

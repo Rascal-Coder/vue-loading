@@ -53,3 +53,4 @@ jobs:
           folder: docs
           single-commit: true
           clean: true
+          token: ${{ secrets.GITHUB_TOKEN }}

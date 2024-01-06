@@ -1,6 +1,7 @@
 # Vue Loading Overlay Component
 
 Vue.js component for full screen loading indicator
+Original author [ankurk91](https://github.com/ankurk91/vue-loading-overlay/)
 
 ## [Demo](https://rascal-coder.github.io/vue-loading/)
 
@@ -13,7 +14,7 @@ Vue.js component for full screen loading indicator
 ## Installation
 
 ```bash
-npm install vue-loading-overlay@^6.0 
+npm install @rascoder/vue-loading
 ```
 
 ## Usage
@@ -35,8 +36,8 @@ npm install vue-loading-overlay@^6.0
 </template>
 
 <script>
-    import Loading from 'vue-loading-overlay';
-    import 'vue-loading-overlay/dist/css/index.css';
+    import Loading from '@rascoder/vue-loading';
+    import '@rascoder/vue-loading/dist/css/index.css';
 
     export default {
         data() {
@@ -70,8 +71,8 @@ Initialise the plugin in your app
 
 ```js
 import {createApp} from 'vue';
-import {LoadingPlugin} from 'vue-loading-overlay';
-import 'vue-loading-overlay/dist/css/index.css';
+import {LoadingPlugin} from '@rascoder/vue-loading';
+import '@rascoder/vue-loading/dist/css/index.css';
 // Your app initialization logic goes here
 const app = createApp({});
 app.use(LoadingPlugin);
@@ -125,7 +126,7 @@ Then use the plugin in your components
 ```html
 <script setup>
     import {ref, inject} from 'vue'
-    import {useLoading} from 'vue-loading-overlay'
+    import {useLoading} from '@rascoder/vue-loading'
     
     const $loading = useLoading({
         // options

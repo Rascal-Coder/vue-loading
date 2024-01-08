@@ -23,7 +23,7 @@ export interface Props {
   color?: string;
   height?: number;
   width?: number;
-  loader?: LoaderType | string;
+  loader?: AnimationType | string;
   backgroundColor?: string;
   opacity?: number;
   zIndex?: number;

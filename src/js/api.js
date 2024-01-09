@@ -2,7 +2,7 @@ import {createComponent} from './helpers';
 import LoadingComponent from './Component.vue';
 
 export function useLoading(globalProps = {}, globalSlots = {}) {
-
+  let instance
   return {
     show(props = globalProps, slots = globalSlots) {
       const forceProps = {
@@ -13,7 +13,6 @@ export function useLoading(globalProps = {}, globalSlots = {}) {
       }
 
       const propsData = {...globalProps, ...props, ...forceProps};
-      // console.log('propsData',propsData);
       let container = propsData.container;
 
       if (!propsData.container) {
@@ -22,11 +21,14 @@ export function useLoading(globalProps = {}, globalSlots = {}) {
       }
 
       const mergedSlots = {...globalSlots, ...slots};
-      const instance = createComponent(LoadingComponent, propsData, container, mergedSlots);
+      instance = createComponent(LoadingComponent, propsData, container, mergedSlots);
 
       return {
         hide: instance.ctx.hide
       }
     },
+    hide(){
+      instance.ctx.hide()
+    }
   }
 }

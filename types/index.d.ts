@@ -44,6 +44,7 @@ export interface ActiveLoader {
 }
 
 export interface PluginApi {
+  hide(): void;
   show(props?: Props, slots?: Slots): ActiveLoader;
 }
 
